@@ -6,3 +6,9 @@ from .models import Student
 #     last_name = serializers.CharField(max_length=30)
 #     number = serializers.IntegerField(required=False)
 
+class StudentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Student
+        fields = ["id", "first_name", "last_name", "number"]
+        # fields = '__all__'
+        # exclude = ['number']
