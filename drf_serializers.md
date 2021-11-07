@@ -350,7 +350,7 @@ class PathSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 class StudentSerializer(serializers.ModelSerializer):
-    path = serializers.StringRelatedField()
+    path = seria lizers.StringRelatedField()
     class Meta:
         model = Student
         fields = "__all__"

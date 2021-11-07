@@ -24,7 +24,7 @@ class StudentSerializer(serializers.ModelSerializer):
     paths = serializers.SerializerMethodField()
     class Meta:
         model = Student
-        fields = ["id", "first_name", "last_name", "number", "path", "path_id", "paths"]
+        fields = ["id", "first_name", "last_name", "number", "path", "path_id","paths"]
         # fields = '__all__'
         # exclude = ['number']
     def get_paths(self,obj):
